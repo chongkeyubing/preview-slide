@@ -3,111 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>previewslider</title>
-	<style>
-		*{
-			margin: 0;
-			padding: 0;
-		}
-		body{
-			background-color: #FFF;
-		}
-		/*幻灯片区域*/
-		.slider,
-		.slider .main,
-		.slider .main .main-item{
-			width: 100%;
-			height: 500px;
-			position: relative;
-		}
-
-		.slider .main{
-			overflow: hidden;
-		}
-		/*每一个幻灯片*/
-		.slider .main .main-item{
-
-		}
-		/*幻灯片图片*/
-		.slider .main .main-item img{
-			width: 100%;
-		/*	position: absolute;
-			left: 0;
-			right: 0;*/
-		}
-		/*幻灯片标题*/
-		.slider .main .main-item .caption{
-			position: absolute;
-			top: 30%;
-			right: 50%;
-			z-index: 9;
-		}
-		.slider .main .main-item .caption h2{
-			font-size: 40px;
-			line-height: 50px;
-			color: #B5B5B5;
-			text-align: right;
-		}
-		.slider .main .main-item .caption h3{
-			font-size: 70px;
-			line-height: 70px;
-			color: #000000;
-			text-align: right;
-			font-family: 'Open Sans Condensed';
-		}
-		/*控制区域*/
-		.slider .ctrl{
-			width: 100%;
-			height: 13px;
-			line-height: 13px;
-			text-align: center;
-/*			position: absolute;
-			left: 0;
-			bottom: -13px;*/
-		}
-		/*控制项*/
-		.slider .ctrl .ctrl-item{
-			position: relative;
-			display: inline-block;
-			width: 150px;
-			height: 13px;
-			background-color: #666;
-			box-shadow: 0 1px 1px rgba(0,0,0,.3);
-		}
-		.slider .ctrl .ctrl-item img{
-			/*等于父元素宽度150px*/
-			width: 100%;  
-			position: absolute;
-			left: 0;
-			bottom: 50px;
-		}
-		/*控制项hover*/
-		.slider .ctrl .ctrl-item:hover{
-			background-color: #F0F0F0;
-		}
-		.slider .ctrl .ctrl-item:hover img{
-			bottom: 13px;
-		}
-	</style>
+	<link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
 	<div class="slider">
 		<!-- 幻灯片区域 -->
-		<div class="main">
-			<div class="main-item">
-				<!-- 标题 -->
-				<div class="caption">
-					<h2>h2 caption</h2>
-					<h3>h3 caption</h3>
-				</div>
-				<img src="imgs/1.jpg">
-			</div>
+		<div class="main" id="template_main">
+
 		</div>
 		<!-- 控制区域 -->
-		<div class="ctrl">
-			<a class="ctrl-item" href="javascript:;">
-				<img src="imgs/1.jpg">
-			</a>
+		<div class="ctrl" id="template_ctrl">
+
 		</div>
 	</div>
+    <script src="mian.js"></script>
 </body>
 </html>
